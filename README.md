@@ -63,8 +63,6 @@ OPENAI_API_KEY=your_openai_key
 ## Project Structure
 
 ```
-## Project Structure
-```
 servicenow-cmdb-chatbot/
 ├── README.md          # Project overview and usage instructions
 ├── CONTRIBUTING.md    # Contribution guidelines
