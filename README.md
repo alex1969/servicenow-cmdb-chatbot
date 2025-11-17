@@ -56,13 +56,10 @@ SNOW_PASSWORD=your_password
 OPENAI_API_KEY=your_openai_key
 ```
 
-> ⚠Never commit `.env` files. Add `.env` to `.gitignore`.
+> Never commit `.env` files. Add `.env` to `.gitignore`.
 
 ---
 
-## Project Structure
-
-```
 ## Project Structure
 ```
 servicenow-cmdb-chatbot/
