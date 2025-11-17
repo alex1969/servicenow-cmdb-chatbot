@@ -63,25 +63,35 @@ OPENAI_API_KEY=your_openai_key
 ## Project Structure
 
 ```
+## Project Structure
+
+```
 servicenow-cmdb-chatbot/
+├── README.md          # Project overview and usage instructions
+├── CONTRIBUTING.md    # Contribution guidelines
+├── LICENSE            # License terms (MIT/Apache/etc.)
+├── requirements.txt   # Python dependencies
+├── pytest.ini         # Pytest configuration for test discovery
+├── .gitignore         # Ignore rules for environments, logs, secrets
 │
-├── src/
-│   ├── chatbot.py           # Core chatbot logic
-│   ├── tools.py             # ServiceNow CMDB tool integration
-│   └── graph.py             # LangGraph workflow setup
+├── src/               # Source code
+│   ├── chatbot.py     # Chatbot entry point, streams responses
+│   ├── tools.py       # ServiceNow CMDB tool integration (REST API calls)
+│   ├── graph.py       # LangGraph workflow setup (nodes, edges, memory)
+│   ├── config.py      # Environment variable management
+│   ├── utils.py       # Helper functions (logging, formatting, error handling)
+│   └── __init__.py    # Marks src as a package
 │
-├── notebooks/
-│   └── demo.ipynb           # Interactive demo
+├── tests/             # Unit and integration tests
+│   ├── test_tools.py          # Validates ServiceNow tool integration
+│   ├── test_tools_mocked.py   # Mocked API tests (no live credentials required)
+│   └── test_chatbot.py        # Validates chatbot memory and tool routing
 │
-├── docs/
-│   └── architecture.md      # Technical overview
+├── docs/              # Technical documentation
+│   └── architecture.md        # Detailed architecture overview
 │
-├── tests/
-│   └── test_tools.py        # Unit tests
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+└── notebooks/         # Interactive demos
+    └── demo.ipynb             # Jupyter notebook for testing chatbot queries
 ```
 
 ---
