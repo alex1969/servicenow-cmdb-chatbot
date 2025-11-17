@@ -64,36 +64,6 @@ OPENAI_API_KEY=your_openai_key
 
 ```
 ## Project Structure
-
-```
-servicenow-cmdb-chatbot/
-├── README.md          # Project overview and usage instructions
-├── CONTRIBUTING.md    # Contribution guidelines
-├── LICENSE            # License terms (MIT/Apache/etc.)
-├── requirements.txt   # Python dependencies
-├── pytest.ini         # Pytest configuration for test discovery
-├── .gitignore         # Ignore rules for environments, logs, secrets
-│
-├── src/               # Source code
-│   ├── chatbot.py     # Chatbot entry point, streams responses
-│   ├── tools.py       # ServiceNow CMDB tool integration (REST API calls)
-│   ├── graph.py       # LangGraph workflow setup (nodes, edges, memory)
-│   ├── config.py      # Environment variable management
-│   ├── utils.py       # Helper functions (logging, formatting, error handling)
-│   └── __init__.py    # Marks src as a package
-│
-├── tests/             # Unit and integration tests
-│   ├── test_tools.py          # Validates ServiceNow tool integration
-│   ├── test_tools_mocked.py   # Mocked API tests (no live credentials required)
-│   └── test_chatbot.py        # Validates chatbot memory and tool routing
-│
-├── docs/              # Technical documentation
-│   └── architecture.md        # Detailed architecture overview
-│
-└── notebooks/         # Interactive demos
-    └── demo.ipynb             # Jupyter notebook for testing chatbot queries
-```
-## Project Structure
 ```
 servicenow-cmdb-chatbot/
 ├── README.md          # Project overview and usage instructions
